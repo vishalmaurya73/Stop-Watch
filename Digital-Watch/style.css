@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Open+Sans:wght@300;400;500&family=Roboto+Mono:wght@700&family=Roboto:wght@500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(camera.jpg);
+  
+
+/* 
+  background: linear-gradient(130deg, #2d7e2d, #a194a500); */
+}
+
+.main {
+  height: 200px;
+  width: 550px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  background: transparent;
+  border-radius: 7px;
+  box-shadow: 0px 10px 20px rgba(23, 126, 62, 0.5);
+}
+
+.main div {
+  height: 170px;
+  width: 150px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  color: white;
+  background-color: rgba(36, 117, 11, 0.9);
+  box-shadow: 5px 5px 15px rgba(71, 70, 133, 0);
+  border-radius: 7px;
+  letter-spacing: 3px;
+}
+
+.main span {
+  font-weight: bolder;
+  font-size: 60px;
+}
+
+.main span.tempo {
+  font-size: 10px;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    overflow: hidden;
+  }
+
+  .main {
+    height: 500px;
+    width: 200px;
+    padding: 20px 0px;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.5);
+  }
+
+  .main div {
+    height: 170px;
+    width: 150px;
+    margin: 5px 0;
+
+    box-shadow: 5px 1px 15px rgba(0, 0, 0, 0.7);
+  }
+}
